@@ -93,6 +93,7 @@ public class ReactNativeMapboxGLView extends RelativeLayout implements
         _handler = new android.os.Handler();
         _manager = manager;
         _mapOptions = MapboxMapOptions.createFromAttributes(context, null);
+        _mapOptions.textureMode(true);
         _mapOptions.zoomGesturesEnabled(true);
         _mapOptions.rotateGesturesEnabled(true);
         _mapOptions.scrollGesturesEnabled(true);
